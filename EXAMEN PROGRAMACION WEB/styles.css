@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+    background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    color: #94a3b8; 
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: #1e293b; 
+    border: 1px solid #334155; 
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-decoration: none;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.menu-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: #cbd5e1;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+.card-1:hover { border-color: #64748b; }
+.card-1:hover .badge { background-color: #64748b; color: #ffffff; }
+
+.card-2:hover { border-color: #94a3b8; }
+.card-2:hover .badge { background-color: #94a3b8; color: #0f172a; }
+
+.card-3:hover { border-color: #cbd5e1; }
+.card-3:hover .badge { background-color: #cbd5e1; color: #0f172a; }
